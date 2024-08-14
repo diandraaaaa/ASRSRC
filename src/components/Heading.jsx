@@ -5,9 +5,11 @@ const Heading = ({ size, color, weight, children, customClasses }) => {
     const colorStyles = {
         white: "text-white",
         black: "text-customBlack",
-        gray: "text-customGray"
+        gray: "text-customGray",
+        primary: "text-[#B0EC9A]"
     };
     const sizeStyles = {
+        title: "text-[128px]",
         h1: "text-[64px]",
         h2: "text-[48px]",
         h3: "text-[40px]",
