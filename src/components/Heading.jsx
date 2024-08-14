@@ -9,7 +9,7 @@ const Heading = ({ size, color, weight, children, customClasses }) => {
         primary: "text-[#B0EC9A]"
     };
     const sizeStyles = {
-        title: "text-[128px]",
+        title: "text-[96px]",
         h1: "text-[64px]",
         h2: "text-[48px]",
         h3: "text-[40px]",
