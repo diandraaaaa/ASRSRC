@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Paragraph = ({ size, color, weight, width,children, customClasses }) => {
-    const baseStyle = "m-4"
+const Paragraph = ({ size, color, weight, width, children, underline,customClasses }) => {
+    const baseStyle = "m-4 relative"
     const colorStyles = {
         white: "text-white",
         black: "text-customBlack",
@@ -27,7 +27,11 @@ const Paragraph = ({ size, color, weight, width,children, customClasses }) => {
 
     return (
             <p className={`${baseStyle} ${colorStyles[color]} ${sizeStyles[size]} ${weightStyles[weight]} ${widthStyles[width]} ${customClasses} `}>
-                {children}
+                    {children}
+                {underline ? (<span className="absolute -top-3 -left-3 w-1 h-4 bg-gradient-4"></span>) : ''}
+                {underline ? (<span className="absolute -top-3 -left-3 w-4 h-1 bg-gradient-4"></span>) : ''}
+                {underline ? ( <span className="absolute bottom-0 right-0 w-1 h-4 bg-gradient-4"></span>) : ''}
+                {underline ? ( <span className="absolute bottom-0 right-0 w-4 h-1 bg-gradient-4"></span>) : ''}
             </p>
     );
 };
