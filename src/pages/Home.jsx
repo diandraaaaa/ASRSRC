@@ -32,7 +32,7 @@ function Home() {
 
       <Newsletter position="center"/>
 
-      <section className="grid grid-cols-1 md:grid-cols-3 max-md:space-y-32 py-32">
+      <section className="grid grid-cols-1 md:grid-cols-3 max-md:space-y-32 py-32 md:px-20">
         <Objective 
           text={lorem} 
           number="1"
