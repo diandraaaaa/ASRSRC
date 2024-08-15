@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Heading = ({ size = "h1", color = "black", weight = "normal", children, underline = "false", align, customClasses }) => {
-    const baseStyle = "m-4 relative"
+const Heading = ({ size = "", color = "black", weight = "normal", children, underline = "", align, dataval, customClasses }) => {
+    const baseStyle = "relative"
     const colorStyles = {
         white: "text-white",
         black: "text-customBlack",
@@ -27,7 +27,9 @@ const Heading = ({ size = "h1", color = "black", weight = "normal", children, un
     }
 
     return (
-            <h1 className={`${baseStyle} ${colorStyles[color]} ${sizeStyles[size]} ${weightStyles[weight]} text-${align} ${customClasses} `}>
+            <h1 className={`${baseStyle} ${colorStyles[color]} ${sizeStyles[size]} ${weightStyles[weight]} text-${align} ${customClasses}`}
+                data-val={dataval || undefined}
+            >
                 {children}
                 { underline ? ( <span class="absolute left-0 bottom-0 w-full h-1 bg-gradient-4"></span> ) : (" ")}
             </h1>
