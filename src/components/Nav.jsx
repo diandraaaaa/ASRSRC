@@ -22,12 +22,12 @@ function Nav() {
                 <img src={Logos} alt="" className="max-w-60 md:max-w-sm md:ml-8" />
             </div>
             <nav className="hidden md:flex justify-between bg-gradient-4 py-8 md:text-[16px] xl:text-[20px]">
-                <a href='/'><h1 className="ml-12">Antreprenoriat social rural sustenabil in Regiunea Centru</h1></a>
+                <a href='/' className="hover:text-white"><h1 className="ml-12">Antreprenoriat social rural sustenabil in Regiunea Centru</h1></a>
 
                 <div className="flex">
                     <ul className="flex justify-center space-x-6 mr-12 text-customBlack font-bold hover:cursor-pointer">
                         { pages.map((page, index) => (
-                            <li key={index}><a href={page.link}>{page.pageName}</a></li>
+                            <li key={index}><a href={page.link} className="hover:text-white">{page.pageName}</a></li>
                         ))
                         }
                     </ul>
@@ -53,7 +53,7 @@ function Nav() {
                 <nav className="absolute z-10 size-64 bg-[#B3E5A0]">
                     <ul className="ml-4 space-y-4 text-customBlack font-bold hover:cursor-pointer">
                         {pages.map((page, index) => (
-                            <li key={index}><a href={page.link}>{page.pageName}</a></li>
+                            <li key={index}><a href={page.link} className="hover:text-white">{page.pageName}</a></li>
                             ))
                         }
                     </ul>
