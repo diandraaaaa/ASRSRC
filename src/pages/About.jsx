@@ -65,9 +65,9 @@ function About() {
     </section>
 
     <section className="py-32"> 
-        <div >
+        <div className="max-md:text-center">
             <Heading color="black" size="h2" weight="bold" underline="true" customClasses="inline md:ml-32">Finantare</Heading>
-            <div className="px-32 mx-auto"> 
+            <div className="md:px-32 mx-auto"> 
                 <Paragraph customClasses="my-14 px-12" underline="true">{lorem}{lorem}<br/><br/>{lorem}{lorem}</Paragraph>
                 <Grid 
                 image1={Image} text1="text1" 
