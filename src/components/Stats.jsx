@@ -59,7 +59,7 @@ function Stats({ stats }) {
                     <Heading size="h1" color="white" weight="bold" dataval={item.stat}>
                         {counters[index]}
                     </Heading>
-                    <Heading size="h6" weight="bold" customClasses="text-[#E4FFDB] uppercase m-0">
+                    <Heading size="h6" weight="bold" color='' customClasses="text-[#E4FFDB] uppercase m-0">
                         {item.text}
                     </Heading>
                 </div>
