@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Paragraph = ({ size = "normal", color = "black", weight = "normal", children, underline = "false", customClasses }) => {
+const Paragraph = ({ size = "", color = "black", weight = "normal", children, underline = "", customClasses }) => {
     const baseStyle = "relative"
     const colorStyles = {
         white: "text-white",
@@ -24,7 +24,7 @@ const Paragraph = ({ size = "normal", color = "black", weight = "normal", childr
     }
 
     return (
-            <p className={`${baseStyle} ${colorStyles[color]} ${sizeStyles[size]} ${weightStyles[weight]} ${widthStyles[width]} ${customClasses}`}>
+            <p className={`${baseStyle} ${colorStyles[color]} ${sizeStyles[size]} ${weightStyles[weight]} ${customClasses}`}>
                     {children}
                 {underline ? (<span className="absolute -top-3 -left-3 w-1 h-6 bg-gradient-4"></span>) : ''}
                 {underline ? (<span className="absolute -top-3 -left-3 w-6 h-1 bg-gradient-4"></span>) : ''}

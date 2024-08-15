@@ -8,6 +8,7 @@ import Grid from '../components/Grid';
 import Objective from '../components/Objective';
 import KeyPoint from '../components/KeyPoint';
 import Dropdown from '../components/Dropdown';
+import Stats from '../components/Stats';
 
 import Image from '../assets/images/about-img.png'
 import Image2 from '../assets/images/newsletter-bg.png'
@@ -17,6 +18,14 @@ import Icon3 from '../assets/icons/green-icon-3.svg'
 
 function About() {
      const lorem = `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."`
+
+     const statsData = [
+        { stat: '100', text: 'Users' },
+        { stat: '200', text: 'Downloads' },
+        { stat: '300', text: 'Likes' },
+        { stat: '400', text: 'Followers'}
+      ];
+
   return (
     <>    
     <section>
@@ -116,6 +125,8 @@ function About() {
             <Paragraph customClasses="my-14 px-20 break-inside-avoid">{lorem}<br/><br/></Paragraph>
         </div>
     </section>
+
+    <Stats stats={statsData} />
   </>
 
       
