@@ -5,8 +5,12 @@ import Button from '../components/Button';
 import Paragraph from '../components/Paragraph';
 
 import Objective from '../components/Objective';
+import KeyPoint from '../components/KeyPoint';
 
 import Image from '../assets/images/about-img.png'
+import Icon from '../assets/icons/green-icon.svg'
+import Icon2 from '../assets/icons/green-icon-2.svg'
+import Icon3 from '../assets/icons/green-icon-3.svg'
 
 function About() {
     const lorem = `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."`
@@ -37,9 +41,26 @@ function About() {
     </section>
     <section>
         <div className="text-center">
-            <Heading color="black" weight="bold" size="h1" underline="true" customClasses="inline">Partenerii nostri</Heading>
+            <Heading color="black" weight="bold" size="h1" underline="true" customClasses="inline max-sm:block">Partenerii nostri</Heading>
         </div>
-       
+        <div className="max-w-2xl mx-auto py-32">
+            <KeyPoint
+                title="Understanding Recycling:"
+                text="Explanation of what recycling is and why it’s important."
+                icon={Icon}
+                customClasses="pt-2"
+            />
+            <KeyPoint
+                title="How to Recycle Effectively:"
+                text="Tips on sorting and preparing materials for recycling."
+                icon={Icon2}
+            />
+            <KeyPoint
+                title="The Impact of Recycling:"
+                text="Statistics and facts about how recycling benefits the environment."
+                icon={Icon3}
+            />
+        </div>
     </section>
   </>
 

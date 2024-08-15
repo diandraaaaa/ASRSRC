@@ -6,6 +6,7 @@ const Paragraph = ({ size, color, weight, width, children, underline, customClas
         white: "text-white",
         black: "text-customBlack",
         gray: "text-customGray",
+        green: "text-customColor1"
     };
     const widthStyles = {
         half: "w-1/2",
