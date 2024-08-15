@@ -8,6 +8,15 @@ function Nav() {
         setIsMobileNavVisible(!isMobileNavVisible);
     };
 
+    const pages = [
+        {link: '/', pageName: 'Acasa'},
+        {link: '/despre-noi', pageName: 'Despre noi'},
+        {linl: '/Concurs-planuri-de-afacere', pageName:'Concurs planuri de afacere'},
+        {link: '/Intreprinderi-sociale', pageName: 'Intreprinderi sociale'},
+        {link: '/Teme-fse+', pageName: 'Teme FSE+'},
+        {link: '/Noutati', pageName: 'Noutati'},
+        {link: '/Contact', pageName: 'Contact'}
+    ]
     return (
         <>
             <div>
@@ -18,11 +27,10 @@ function Nav() {
 
                 <div className="flex">
                     <ul className="flex justify-center space-x-12 mr-12 text-customBlack font-bold hover:cursor-pointer">
-                        <li><a href='/'>Page 1</a></li>
-                        <li><a href='/'>Page 2</a></li>
-                        <li><a href='/'>Page 3</a></li>
-                        <li><a href='/'>Page 4</a></li>
-                        <li><a href='/'>Page 5</a></li>
+                        { pages.map((page, index) => (
+                            <li key={index}><a href={page.link}>{page.pageName}</a></li>
+                        ))
+                        }
                     </ul>
                 </div>
             </nav>
@@ -45,11 +53,10 @@ function Nav() {
             {isMobileNavVisible && (
                 <nav className="absolute z-10 size-64 bg-[#B3E5A0]">
                     <ul className="ml-4 space-y-4 text-customBlack font-bold hover:cursor-pointer">
-                        <li><a href='/'>Page 1</a></li>
-                        <li><a href='/'>Page 2</a></li>
-                        <li><a href='/'>Page 3</a></li>
-                        <li><a href='/'>Page 4</a></li>
-                        <li><a href='/'>Page 5</a></li>
+                        {pages.map((page, index) => (
+                            <li key={index}><a href={page.link}>{page.pageName}</a></li>
+                            ))
+                        }
                     </ul>
                 </nav>
             )}
