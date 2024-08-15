@@ -43,7 +43,7 @@ function Nav() {
             </nav>
 
             {isMobileNavVisible && (
-                <nav className="absolute size-64 bg-[#B3E5A0]">
+                <nav className="absolute z-10 size-64 bg-[#B3E5A0]">
                     <ul className="ml-4 space-y-4 text-customBlack font-bold hover:cursor-pointer">
                         <li><a href='/'>Page 1</a></li>
                         <li><a href='/'>Page 2</a></li>

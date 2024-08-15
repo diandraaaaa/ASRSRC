@@ -24,7 +24,7 @@ function Footer() {
 
             <div className="text-center">
                 <Heading size="h6">Abonează-te la newsletter-ul nostru</Heading>
-                <Input type="email" placeholder="Email" color="primary"/>
+                <Input type="email" placeholder="Email" color="primary" width="64" position="mx-auto" icon="password"/>
                 <Paragraph color="gray" size="small" customClasses="max-w-md">Nici nouă nu ne place spam, te informăm doar despre oportunități de implicare,proiecte și activități utile</Paragraph>
             </div>
 

@@ -11,9 +11,9 @@ const Paragraph = ({ size, color, weight, width, children, underline, customClas
         half: "w-1/2",
     }
     const sizeStyles = {
-        small: "text-[16px]",
-        normal: "text-[20px]",
-        large: "text-[24px]"
+        small: "text-[12px] md:text-[16px]",
+        normal: "text-[16px] md:text-[20px]",
+        large: "text-[20px] md:text-[24px]"
 
     };
     const weightStyles = {
@@ -28,10 +28,10 @@ const Paragraph = ({ size, color, weight, width, children, underline, customClas
     return (
             <p className={`${baseStyle} ${colorStyles[color]} ${sizeStyles[size]} ${weightStyles[weight]} ${widthStyles[width]} ${customClasses}`}>
                     {children}
-                {underline ? (<span className="absolute -top-3 -left-3 w-1 h-4 bg-gradient-4"></span>) : ''}
-                {underline ? (<span className="absolute -top-3 -left-3 w-4 h-1 bg-gradient-4"></span>) : ''}
-                {underline ? ( <span className="absolute bottom-0 right-0 w-1 h-4 bg-gradient-4"></span>) : ''}
-                {underline ? ( <span className="absolute bottom-0 right-0 w-4 h-1 bg-gradient-4"></span>) : ''}
+                {underline ? (<span className="absolute -top-3 -left-3 w-1 h-6 bg-gradient-4"></span>) : ''}
+                {underline ? (<span className="absolute -top-3 -left-3 w-6 h-1 bg-gradient-4"></span>) : ''}
+                {underline ? ( <span className="absolute bottom-0 right-0 w-1 h-6 bg-gradient-4"></span>) : ''}
+                {underline ? ( <span className="absolute bottom-0 right-0 w-6 h-1 bg-gradient-4"></span>) : ''}
             </p>
     );
 };

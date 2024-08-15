@@ -3,9 +3,9 @@ import React from 'react'
 const Button = ({size, color, children, onClick, customClasses}) => {
     const baseStyles = "py-3 px-6 text-white font-semibold rounded-[10px] transition-all m-4"
     const sizeStyles = {
-        small: 'text-[24px]',
-        medium: 'text-[32px]',
-        large: 'text-[48px]',
+        small: 'text-[20px] md:text-[24px]',
+        medium: 'text-[24px] md:text-[32px]',
+        large: 'text-[32px] md:text-[40px]',
     }
     const colorStyles = {
         primary: "bg-gradient-4 text-[#1F1F1F] hover:text-customBlack",
