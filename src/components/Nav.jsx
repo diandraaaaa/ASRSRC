@@ -34,7 +34,7 @@ function Nav() {
             <div>
                 <img src={Logos} alt="" className="max-w-60 md:max-w-sm md:ml-8" />
             </div>
-            <nav className="hidden md:flex justify-between bg-gradient-4 py-8 md:text-[16px] xl:text-[20px]">
+            <nav className="hidden md:flex justify-between bg-gradient-4 py-8 md:text-[12px] xl:text-[16px]">
                 <a href='/' className="hover:text-white"><h1 className="ml-12">Antreprenoriat social rural sustenabil in Regiunea Centru</h1></a>
 
                 <div className="flex">
