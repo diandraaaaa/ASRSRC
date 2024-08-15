@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import Logos from '../assets/Nav Header.png';
 
 function Nav() {
@@ -7,6 +7,19 @@ function Nav() {
     const menuToggle = () => {
         setIsMobileNavVisible(!isMobileNavVisible);
     };
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 768) {
+                setIsMobileNavVisible(false);
+            }
+        };
+        window.addEventListener('resize', handleResize);
+        handleResize();
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const pages = [
         {link: '/despre-noi', pageName: 'Despre noi'},
@@ -21,7 +34,7 @@ function Nav() {
             <div>
                 <img src={Logos} alt="" className="max-w-60 md:max-w-sm md:ml-8" />
             </div>
-            <nav className="hidden md:flex justify-between bg-gradient-4 py-8 md:text-[16px] xl:text-[20px]">
+            <nav className="hidden md:flex justify-between bg-gradient-4 py-8 md:text-[12px] xl:text-[16px]">
                 <a href='/' className="hover:text-white"><h1 className="ml-12">Antreprenoriat social rural sustenabil in Regiunea Centru</h1></a>
 
                 <div className="flex">
@@ -50,8 +63,9 @@ function Nav() {
             </nav>
 
             {isMobileNavVisible && (
-                <nav className="absolute z-10 size-64 bg-[#B3E5A0]">
-                    <ul className="ml-4 space-y-4 text-customBlack font-bold hover:cursor-pointer">
+                <nav className="absolute z-10 h-96 w-64 bg-[#B3E5A0]">
+                    <ul className="ml-4 pt-10 space-y-6 text-customBlack font-bold hover:cursor-pointer">
+                        <li><a href='/' className="hover:text-white">Acasa</a></li>
                         {pages.map((page, index) => (
                             <li key={index}><a href={page.link} className="hover:text-white">{page.pageName}</a></li>
                             ))
