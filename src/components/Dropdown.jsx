@@ -20,7 +20,7 @@ function Dropdown({title, text}) {
             className={`max-md:size-12 transition-transform duration-300 ${isDropdownVisible ? 'rotate-180' : ''}`} 
         />
         </div>   
-        { isDropdownVisible ? (<div><Paragraph color="black" size="small" customClasses="m-4 px-2 md:px-16">{text}</Paragraph></div>) : ' '}
+        { isDropdownVisible ? (<div><Paragraph color="black" size="normal" customClasses="m-4 px-2 md:px-16">{text}</Paragraph></div>) : ' '}
     </div>
   )
 }
