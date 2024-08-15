@@ -119,10 +119,10 @@ function About() {
             <Heading color="black" weight="bold" size="h1" underline="true" customClasses="inline max-sm:block">Beneficii</Heading>
         </div>  
         <div className="grid grid-cols-1 md:grid-cols-2 py-12 items-center max-w-7xl mx-auto">
-            <Paragraph customClasses="my-14 px-20 break-inside-avoid">{lorem}<br/><br/></Paragraph>
-            <Paragraph customClasses="my-14 px-20 break-inside-avoid">{lorem}<br/><br/></Paragraph>
-            <Paragraph customClasses="my-14 px-20 break-inside-avoid">{lorem}<br/><br/></Paragraph>
-            <Paragraph customClasses="my-14 px-20 break-inside-avoid">{lorem}<br/><br/></Paragraph>
+            <Paragraph customClasses="my-14 px-12 md:px-20 break-inside-avoid">{lorem}<br/><br/></Paragraph>
+            <Paragraph customClasses="my-14 px-12 md:px-20 break-inside-avoid">{lorem}<br/><br/></Paragraph>
+            <Paragraph customClasses="my-14 px-12 md:px-20 break-inside-avoid">{lorem}<br/><br/></Paragraph>
+            <Paragraph customClasses="my-14 px-12 md:px-20 break-inside-avoid">{lorem}<br/><br/></Paragraph>
         </div>
     </section>
 
