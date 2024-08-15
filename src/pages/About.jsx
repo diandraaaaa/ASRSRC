@@ -10,6 +10,7 @@ import KeyPoint from '../components/KeyPoint';
 import Dropdown from '../components/Dropdown';
 
 import Image from '../assets/images/about-img.png'
+import Image2 from '../assets/images/newsletter-bg.png'
 import Icon from '../assets/icons/green-icon.svg'
 import Icon2 from '../assets/icons/green-icon-2.svg'
 import Icon3 from '../assets/icons/green-icon-3.svg'
@@ -72,8 +73,8 @@ function About() {
                 <Paragraph customClasses="my-14 px-12" underline="true">{lorem}{lorem}<br/><br/>{lorem}{lorem}</Paragraph>
                 <Grid 
                 image1={Image} text1="text1" 
-                image2={Image} text2="text2" 
-                image3={Image} text3="text3" 
+                image2={Image2} text2="text2" 
+                image3={Image2} text3="text3" 
                 image4={Image} text4="text4"
             />
             </div>
@@ -93,7 +94,6 @@ function About() {
             title="Subventii si beneficii"
             text={`${lorem} ${lorem} ${lorem}`}
         />
-
     </section>
   </>
 

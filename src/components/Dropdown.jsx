@@ -12,7 +12,7 @@ function Dropdown({title, text}) {
     };
 
   return (
-    <div className="mx-4 md:mx-32 py-6 border-b-[3px] border-[#27C25C]" onClick={dropdownToggle}>
+    <div className="mx-4 md:mx-32 hover:bg-gray-50 rounded-tl-[10px] rounded-tr-[10px] py-6 border-b-[3px] border-[#27C25C]" onClick={dropdownToggle}>
         <div className="flex items-center justify-between md:px-16">
          <Heading color="black" size="h3" weight="bold">{title}</Heading>
          <img 
