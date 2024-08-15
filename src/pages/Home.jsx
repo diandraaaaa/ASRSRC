@@ -4,6 +4,8 @@ import Heading from '../components/Heading';
 import Button from '../components/Button';
 import Paragraph from '../components/Paragraph';
 
+import Newsletter from '../components/Newsletter';
+
 import Image from '../assets/landing-img.png'
 import Image2 from '../assets/home-img.png'
 
@@ -31,13 +33,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="h-screen">
-      
-        <div >
-           
-        </div>
-
-      </section>
+      <Newsletter position="center"/>
     </>
   );
 }

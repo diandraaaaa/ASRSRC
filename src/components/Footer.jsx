@@ -3,6 +3,8 @@ import Heading from './Heading'
 import Paragraph from './Paragraph'
 import Input from './Input'
 
+import Newsletter from './Newsletter'
+
 import Logo1 from '../assets/Logo FECID.svg'
 import Logo2 from '../assets/Logo margareta.svg'
 import Logo3 from '../assets/logo_prgpers_sm 1.svg'
@@ -24,7 +26,7 @@ function Footer() {
 
             <div className="text-center">
                 <Heading size="h6">Abonează-te la newsletter-ul nostru</Heading>
-                <Input type="email" placeholder="Email" color="primary" width="64" position="mx-auto" icon="password"/>
+                <Input type="email" placeholder="Email" color="primary" width="64" position="mx-auto" icon="email"/>
                 <Paragraph color="gray" size="small" customClasses="max-w-md">Nici nouă nu ne place spam, te informăm doar despre oportunități de implicare,proiecte și activități utile</Paragraph>
             </div>
 

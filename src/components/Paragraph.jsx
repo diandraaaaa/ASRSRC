@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Paragraph = ({ size, color, weight, width, children, underline, customClasses }) => {
-    const baseStyle = "m-4 relative"
+    const baseStyle = "relative"
     const colorStyles = {
         white: "text-white",
         black: "text-customBlack",
