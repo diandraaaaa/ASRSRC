@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Heading = ({ size, color, weight, children, underline, align,customClasses }) => {
+const Heading = ({ size = "h1", color = "black", weight = "normal", children, underline = "false", align, customClasses }) => {
     const baseStyle = "m-4 relative"
     const colorStyles = {
         white: "text-white",

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Paragraph = ({ size, color, weight, width, children, underline, customClasses }) => {
+const Paragraph = ({ size = "normal", color = "black", weight = "normal", children, underline = "false", customClasses }) => {
     const baseStyle = "relative"
     const colorStyles = {
         white: "text-white",
@@ -8,9 +8,6 @@ const Paragraph = ({ size, color, weight, width, children, underline, customClas
         gray: "text-customGray",
         green: "text-customColor1"
     };
-    const widthStyles = {
-        half: "w-1/2",
-    }
     const sizeStyles = {
         small: "text-[12px] md:text-[16px]",
         normal: "text-[16px] md:text-[20px]",
