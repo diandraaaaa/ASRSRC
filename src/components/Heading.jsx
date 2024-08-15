@@ -12,7 +12,7 @@ const Heading = ({ size, color, weight, children, underline, align,customClasses
         title: "text-[96px]",
         h1: "text-[36px] md:text-[64px]",
         h2: "text-[32px] md:text-[48px]",
-        h3: "text-[40px]",
+        h3: "text-[26px] md:text-[40px]",
         h4: "text-[24px] md:text-[36px]",
         h5: "text-[32px]",
         h6: "text-[24px]",

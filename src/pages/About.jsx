@@ -7,6 +7,7 @@ import Grid from '../components/Grid';
 
 import Objective from '../components/Objective';
 import KeyPoint from '../components/KeyPoint';
+import Dropdown from '../components/Dropdown';
 
 import Image from '../assets/images/about-img.png'
 import Icon from '../assets/icons/green-icon.svg'
@@ -67,7 +68,7 @@ function About() {
     <section className="py-32"> 
         <div className="max-md:text-center">
             <Heading color="black" size="h2" weight="bold" underline="true" customClasses="inline md:ml-32">Finantare</Heading>
-            <div className="md:px-32 mx-auto"> 
+            <div className="md:px-20 mx-auto"> 
                 <Paragraph customClasses="my-14 px-12" underline="true">{lorem}{lorem}<br/><br/>{lorem}{lorem}</Paragraph>
                 <Grid 
                 image1={Image} text1="text1" 
@@ -77,6 +78,22 @@ function About() {
             />
             </div>
         </div>
+    </section>
+
+    <section className="py-32">
+        <Dropdown
+            title="Informatii"
+            text={`${lorem} ${lorem} ${lorem}`}
+        />
+         <Dropdown
+            title="Documente necesare"
+            text={`${lorem} ${lorem} ${lorem}`}
+        />
+         <Dropdown
+            title="Subventii si beneficii"
+            text={`${lorem} ${lorem} ${lorem}`}
+        />
+
     </section>
   </>
 
