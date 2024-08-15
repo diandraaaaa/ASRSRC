@@ -29,6 +29,7 @@ function Home() {
           <Paragraph customClasses="my-14 px-12" underline="true">{lorem}{lorem}<br/><br/>{lorem}{lorem}</Paragraph>
         </div>
       </section>
+
     </>
   );
 }

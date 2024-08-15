@@ -65,15 +65,17 @@ function About() {
     </section>
 
     <section className="py-32"> 
-        <div className="max-w-5xl mx-auto">
+        <div >
             <Heading color="black" size="h2" weight="bold" underline="true" customClasses="inline md:ml-32">Finantare</Heading>
-            <Paragraph customClasses="my-14 px-12" underline="true">{lorem}{lorem}<br/><br/>{lorem}{lorem}</Paragraph>
-            <Grid 
+            <div className="px-32 mx-auto"> 
+                <Paragraph customClasses="my-14 px-12" underline="true">{lorem}{lorem}<br/><br/>{lorem}{lorem}</Paragraph>
+                <Grid 
                 image1={Image} text1="text1" 
                 image2={Image} text2="text2" 
                 image3={Image} text3="text3" 
                 image4={Image} text4="text4"
             />
+            </div>
         </div>
     </section>
   </>
