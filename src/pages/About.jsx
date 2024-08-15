@@ -3,6 +3,7 @@ import React from 'react'
 import Heading from '../components/Heading';
 import Button from '../components/Button';
 import Paragraph from '../components/Paragraph';
+import Grid from '../components/Grid';
 
 import Objective from '../components/Objective';
 import KeyPoint from '../components/KeyPoint';
@@ -13,7 +14,7 @@ import Icon2 from '../assets/icons/green-icon-2.svg'
 import Icon3 from '../assets/icons/green-icon-3.svg'
 
 function About() {
-    const lorem = `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."`
+     const lorem = `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."`
   return (
     <>    
     <section>
@@ -22,22 +23,22 @@ function About() {
     <section className="py-20 max-md:text-center">
         <Heading color="black" size="h2" weight="bold" underline="true" customClasses="inline md:ml-32">Obiective generale </Heading>
         <div className="grid grid-cols-1 md:grid-cols-3 max-md:space-y-32 py-32 md:px-20">
-        <Objective 
-        text={lorem} 
-        number="1"
-        title="Objective"
-        />
-        <Objective 
-        text={lorem}
-        number="2" 
-        title="Objective"
-        />
-        <Objective
-        text={lorem} 
-        number="3" 
-        title="Objective"
-        />
-    </div>
+            <Objective 
+            text={lorem} 
+            number="1"
+            title="Objective"
+            />
+            <Objective 
+            text={lorem}
+            number="2" 
+            title="Objective"
+            />
+            <Objective
+            text={lorem} 
+            number="3" 
+            title="Objective"
+            />
+        </div>
     </section>
     <section className="py-32">
         <div className="text-center">
@@ -59,6 +60,19 @@ function About() {
                 title="The Impact of Recycling:"
                 text="Statistics and facts about how recycling benefits the environment."
                 icon={Icon3}
+            />
+        </div>
+    </section>
+
+    <section className="py-32"> 
+        <div className="max-w-5xl mx-auto">
+            <Heading color="black" size="h2" weight="bold" underline="true" customClasses="inline md:ml-32">Finantare</Heading>
+            <Paragraph customClasses="my-14 px-12" underline="true">{lorem}{lorem}<br/><br/>{lorem}{lorem}</Paragraph>
+            <Grid 
+                image1={Image} text1="text1" 
+                image2={Image} text2="text2" 
+                image3={Image} text3="text3" 
+                image4={Image} text4="text4"
             />
         </div>
     </section>
