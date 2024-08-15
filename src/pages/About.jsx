@@ -95,6 +95,27 @@ function About() {
             text={`${lorem} ${lorem} ${lorem}`}
         />
     </section>
+
+    <section className="py-32">
+        <div className="text-center">
+            <Heading color="black" weight="bold" size="h1" underline="true" customClasses="inline max-sm:block">Economia Socială</Heading>
+        </div>        
+        <div className="max-w-5xl mx-auto"> 
+        <Paragraph customClasses="my-14 px-12" underline="true">{lorem}{lorem}<br/><br/>{lorem}{lorem}</Paragraph>
+        </div>
+    </section>
+
+    <section className="py-32 h-full">
+        <div className="text-center">
+            <Heading color="black" weight="bold" size="h1" underline="true" customClasses="inline max-sm:block">Beneficii</Heading>
+        </div>  
+        <div className="grid grid-cols-1 md:grid-cols-2 py-12 space-x-20 items-center max-w-7xl mx-auto">
+            <Paragraph customClasses="my-14 px-12 break-inside-avoid">{lorem}<br/><br/></Paragraph>
+            <Paragraph customClasses="my-14 px-12 break-inside-avoid">{lorem}<br/><br/></Paragraph>
+            <Paragraph customClasses="my-14 px-12 break-inside-avoid">{lorem}<br/><br/></Paragraph>
+            <Paragraph customClasses="my-14 px-12 break-inside-avoid">{lorem}<br/><br/></Paragraph>
+        </div>
+    </section>
   </>
 
       
