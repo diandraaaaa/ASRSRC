@@ -4,7 +4,7 @@ import Paragraph from './Paragraph'
 
 function KeyPoint({title, text, icon, customClasses}) {
   return (
-    <div className={`flex max-md:flex-col max-w-3xl py-8 items-center max-md:border-b-2  ${customClasses}`}>
+    <div className={`flex max-md:flex-col max-w-3xl py-8 items-center max-md:border-b-2 max-md:mx-12  ${customClasses}`}>
         <div>
             <img src={icon} alt="" className="max-md:max-w-[128px] max-md:pt-10 max-md:pb-4 max-w-[168px]"/>
         </div>

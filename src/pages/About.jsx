@@ -39,11 +39,11 @@ function About() {
         />
     </div>
     </section>
-    <section>
+    <section className="py-32">
         <div className="text-center">
             <Heading color="black" weight="bold" size="h1" underline="true" customClasses="inline max-sm:block">Partenerii nostri</Heading>
         </div>
-        <div className="max-w-2xl mx-auto py-32">
+        <div className="max-w-2xl mx-auto mt-24">
             <KeyPoint
                 title="Understanding Recycling:"
                 text="Explanation of what recycling is and why it’s important."
