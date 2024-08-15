@@ -9,13 +9,12 @@ function Nav() {
     };
 
     const pages = [
-        {link: '/', pageName: 'Acasa'},
         {link: '/despre-noi', pageName: 'Despre noi'},
-        {linl: '/Concurs-planuri-de-afacere', pageName:'Concurs planuri de afacere'},
-        {link: '/Intreprinderi-sociale', pageName: 'Intreprinderi sociale'},
-        {link: '/Teme-fse+', pageName: 'Teme FSE+'},
-        {link: '/Noutati', pageName: 'Noutati'},
-        {link: '/Contact', pageName: 'Contact'}
+        {link: '/concurs-planuri-de-afacere', pageName:'Concurs planuri de afacere'},
+        {link: '/intreprinderi-sociale', pageName: 'Intreprinderi sociale'},
+        {link: '/teme-fse+', pageName: 'Teme FSE+'},
+        {link: '/noutati', pageName: 'Noutati'},
+        {link: '/contact', pageName: 'Contact'}
     ]
     return (
         <>
@@ -23,10 +22,10 @@ function Nav() {
                 <img src={Logos} alt="" className="max-w-60 md:max-w-sm md:ml-8" />
             </div>
             <nav className="hidden md:flex justify-between bg-gradient-4 py-8 md:text-[16px] xl:text-[20px]">
-                <h1 className="ml-12">Antreprenoriat social rural sustenabil in Regiunea Centru</h1>
+                <a href='/'><h1 className="ml-12">Antreprenoriat social rural sustenabil in Regiunea Centru</h1></a>
 
                 <div className="flex">
-                    <ul className="flex justify-center space-x-12 mr-12 text-customBlack font-bold hover:cursor-pointer">
+                    <ul className="flex justify-center space-x-6 mr-12 text-customBlack font-bold hover:cursor-pointer">
                         { pages.map((page, index) => (
                             <li key={index}><a href={page.link}>{page.pageName}</a></li>
                         ))

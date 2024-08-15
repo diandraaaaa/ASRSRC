@@ -29,27 +29,6 @@ function Home() {
           <Paragraph customClasses="my-14 px-12" underline="true">{lorem}{lorem}<br/><br/>{lorem}{lorem}</Paragraph>
         </div>
       </section>
-
-      <Newsletter position="center"/>
-
-      <section className="grid grid-cols-1 md:grid-cols-3 max-md:space-y-32 py-32 md:px-20">
-        <Objective 
-          text={lorem} 
-          number="1"
-          title="Objective"
-        />
-        <Objective 
-          text={lorem}
-          number="2" 
-          title="Objective"
-        />
-        <Objective
-          text={lorem} 
-          number="3" 
-          title="Objective"
-        />
-
-      </section>
     </>
   );
 }
