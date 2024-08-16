@@ -16,9 +16,9 @@ function Home() {
     <>
       <section className="text-center py-32 h-screen">
         <div>
-          <img src={Image} alt="" className="absolute max-md:hidden max-w-xl"/>
+          <img src={Image} alt="" className="absolute max-md:hidden max-w-xl z-0"/>
           <Heading color="black" size="h1" weight="bold" customClasses="md:mt-14 max-w-5xl mx-auto z-9">“Empowering Tomorrow, One <span className="text-[#27C25C]">Green</span> Choice at a Time.”</Heading>
-          <Button color="secondary" size="small" customClasses="z-9 block mx-auto">Citeste mai mult</Button>
+          <Button color="secondary" size="small" customClasses="block mx-auto z-9">Citeste mai mult</Button>
         </div>
       </section>
 

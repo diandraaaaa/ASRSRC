@@ -9,6 +9,7 @@ import Objective from '../components/Objective';
 import KeyPoint from '../components/KeyPoint';
 import Dropdown from '../components/Dropdown';
 import Stats from '../components/Stats';
+import Project from '../components/Project';
 
 import Image from '../assets/images/about-img.png'
 import Image2 from '../assets/images/newsletter-bg.png'
@@ -127,6 +128,14 @@ function About() {
     </section>
 
     <Stats stats={statsData} />
+
+    <section className="py-32">
+        <Project 
+            title="Titlu"
+            text="Descriere scurta"
+            image={Image}
+        />
+    </section>
   </>
 
       
