@@ -4,6 +4,8 @@ import Heading from '../components/Heading';
 import Button from '../components/Button';
 import Paragraph from '../components/Paragraph';
 import Grid from '../components/Grid';
+import Table from '../components/Table';
+import TableRow from '../components/TableRow';
 
 import Objective from '../components/Objective';
 import KeyPoint from '../components/KeyPoint';
@@ -18,7 +20,7 @@ import Icon2 from '../assets/icons/green-icon-2.svg'
 import Icon3 from '../assets/icons/green-icon-3.svg'
 
 function About() {
-     const lorem = `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."`
+     const lorem = `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"`
 
      const statsData = [
         { stat: '100', text: 'Users' },
@@ -54,7 +56,7 @@ function About() {
     </section>
     <section className="py-32">
         <div className="text-center">
-            <Heading color="black" weight="bold" size="h1" underline="true" customClasses="inline max-sm:block">Partenerii nostri</Heading>
+            <Heading color="black" weight="bold" size="h2" underline="true" customClasses="inline max-sm:block">Partenerii nostri</Heading>
         </div>
         <div className="max-w-2xl mx-auto mt-24">
             <KeyPoint
@@ -129,13 +131,69 @@ function About() {
 
     <Stats stats={statsData} />
 
-    <section className="py-32">
+    <section className="py-32 px-2 md:px-10 xl:px-32">
         <Project 
+            category="Test"
             title="Titlu"
-            text="Descriere scurta"
+            description={lorem}
             image={Image}
         />
+        <div className="grid grid-cols-1 xl:grid-cols-3">
+            <Project 
+                category="Test"
+                title="Titlu"
+                description={lorem}
+                image={Image}
+                size="small"
+            />
+            <Project 
+                category="Test"
+                title="Titlu"
+                description={lorem}
+                image={Image}
+                size="small"
+            />
+            <Project 
+                category="Test"
+                title="Titlu"
+                description={lorem}
+                image={Image}
+                size="small"
+            />
+        </div>
+       
     </section>
+    
+    <div className="py-32">
+        <Table col1="col1" col2="col2" col3="col3" col4="col4">
+            <TableRow 
+            text1="Hello"
+            text2="Hello"
+            text3="Hello"
+            text4="Hello"
+            />
+            <TableRow 
+            text1="Hello"
+            text2="Hello"
+            text3="Hello"
+            text4="Hello"
+            />
+            <TableRow 
+            text1="Hello"
+            text2="Hello"
+            text3="Hello"
+            text4="Hello"
+            />
+            <TableRow 
+            text1="Hello"
+            text2="Hello"
+            text3="Hello"
+            text4="Hello"
+            />
+        </Table>
+    </div>
+
+        
   </>
 
       

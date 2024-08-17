@@ -25,8 +25,10 @@ function Home() {
       <section className="py-32 h-full"> 
         <div className="max-w-5xl mx-auto">
           <img src={Image2} alt="" className="mx-auto max-md:px-4 md:max-w-md xl:max-w-6xl mb-12"/>
-          <Heading size="h4" underline="true" align="center">Antreprenoriat social rural sustenabil in Regiunea Centru</Heading>
-          <Paragraph customClasses="my-14 px-12" underline="true">{lorem}{lorem}<br/><br/>{lorem}{lorem}</Paragraph>
+          <Heading size="h4" underline="true" weight="bold" align="center"> Antreprenoriat social rural sustenabil in Regiunea Centru</Heading>
+          <Paragraph customClasses="my-14 px-12" underline="true">Aceasta este pagina de prezentare a proiectului european cu titlul – „Antreprenoriat social urban sustenabil în Regiunea Centru”, proiect cofinanțat din Fondul Social European prin Programul Incluziune si Demnitate Sociala 2021-2027, ce este derulat de către Asociația Institutul Educațional pentru Politici Sociale Margareta în parteneriat cu Fundația Europeană pentru Consultanță, Implementare și Dezvoltare și Fundația Progpers, în perioada 01 iulie 2024 – 31 decembrie 2026.
+          <br/><br/>
+            Pentru informații detaliate despre celelalte programe cofinanțate de Uniunea Europeană, vă invităm să vizitați mfe.gov.ro</Paragraph>
         </div>
       </section>
 

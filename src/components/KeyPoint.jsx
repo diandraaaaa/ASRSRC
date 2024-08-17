@@ -9,7 +9,7 @@ function KeyPoint({title, text, icon, customClasses}) {
             <img src={icon} alt="" className="max-md:max-w-[128px] max-md:pt-10 max-md:pb-4 max-w-[168px]"/>
         </div>
         <div>
-            <Heading color="black" weight="bold" size="h4">{title}</Heading>
+            <Heading color="black" weight="bold" size="h5">{title}</Heading>
             <Paragraph color="green" weight="medium" size="large" customClasses="m-4">{text}</Paragraph>
         </div>
     </div>
