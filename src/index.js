@@ -29,7 +29,7 @@ const router = createBrowserRouter([
     element: <Contact />
   },
   {
-    path: '/teme-fse+',
+    path: '/teme-fse+/:title',
     element: <Page />
   }
 ])
