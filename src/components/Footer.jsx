@@ -9,12 +9,35 @@ import Logo1 from '../assets/Logo FECID.svg'
 import Logo2 from '../assets/Logo margareta.svg'
 import Logo3 from '../assets/logo_prgpers_sm 1.svg'
 
+import LocationIcon from '../assets/icons/location-icon.svg'
+import EmailIcon from '../assets/icons/email-icon.svg'
+import PhoneIcon from '../assets/icons/phone-icon.svg'
+import { Link } from 'react-router-dom'
+
 function Footer() {
+    const footerSections = [
+        {
+          title: "Contact",
+          links: [
+            { href: "tel:+40727373060", displayText: "+40 727 373 060" },
+            { href: "mailto:asociatia.margareta@gmail.com", displayText: "asociatia.margareta@gmail.com" },
+            { href: "#", displayText: "Strada Dorului Nr. 20C, Sibiu, Romania" }
+        ]
+        },
+        {
+          title: "Despre Noi",
+          links: [
+            { href: "/obiective", displayText: "Obiective" },
+            { href: "/parteneri", displayText: "Parteneri" },
+            { href: "/formare-profesionala", displayText: "Formare profesionala" },
+          ],
+        },
+      ];
   return (
     <footer className="bg-gradient-4 pt-12 pb-24">
         <div className="flex max-md:flex-col justify-between mx-12 mb-12">
             
-            <div className="flex max-md:flex-col space-x-4">
+            <div className="flex max-md:flex-col space-x-20">
                 <img src={Logo2} alt="" className="max-w-64"/>
                 <img src={Logo1} alt="" className="max-w-64"/>
             </div>
@@ -31,18 +54,22 @@ function Footer() {
             </div>
 
             <div className="flex max-md:text-center max-md:flex-col md:space-x-32">
-                <ul>
-                    <li><Heading size="h6" weight="semibold">Contact</Heading></li>
-                    <li><Heading color="gray">Numar</Heading></li>
-                    <li><Heading color="gray">Email</Heading></li>
-                    <li><Heading color="gray">Adresa</Heading></li>
-                </ul>
-                <ul>
-                    <li><Heading size="h6" weight="semibold">Despre Noi</Heading></li>
-                    <li><Heading color="gray">Servicii</Heading></li>
-                    <li><Heading color="gray">Parteneri</Heading></li>
-                    <li><Heading color="gray">Contacte</Heading></li>
-                </ul>
+                {footerSections.map((section, index) =>(
+                    <ul key={index}>
+                        <li>
+                            <Heading size="h6" weight="semibold">{section.title}</Heading>
+                        </li>
+                        {section.links.map((link, linkIndex) =>(
+                            <li key={linkIndex}>
+                                <Heading color="gray">
+                                    <a href={link.href}>{link.displayText}</a>
+                                </Heading>
+                            </li>
+                        )
+                        )}
+                    </ul>
+                ) )
+                }
             </div>
 
         </div>
