@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Error from './pages/Error';
 import About from './pages/About'
+import Contact from './pages/Contact';  
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: '/despre-noi',
     element: <About />
+  },
+  {
+    path: '/contact',
+    element: <Contact />
   }
 ])
 

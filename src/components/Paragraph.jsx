@@ -6,7 +6,7 @@ const Paragraph = ({ size = "", color = "black", weight = "normal", children, un
         white: "text-white",
         black: "text-customBlack",
         gray: "text-customGray",
-        green: "text-customColor1"
+        green: "text-[#27C25C]"
     };
     const sizeStyles = {
         small: "text-[12px] md:text-[16px]",
