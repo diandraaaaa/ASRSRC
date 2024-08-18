@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom';
 
 import Image from '../assets/images/about-img.png'
-import Stats from '../components/Stats';
 import Paragraph from '../components/Paragraph';
 import Heading from '../components/Heading';
 import Error from './Error';
@@ -11,34 +10,24 @@ function Page() {
     const params = useParams()
     const foundSection = data.sections.find(section => section.link === params.title);
 
-    const statsData = [
-        { stat: '100', text: 'Users' },
-        { stat: '200', text: 'Downloads' },
-        { stat: '300', text: 'Likes' },
-        { stat: '400', text: 'Followers'}
-      ];
-
     return (
         <>  
-        {foundSection ? 
+        { foundSection ? 
         <div>
             <img src={Image} alt="" className="py-10 px-4 md:px-40" />
             <section className="py-10 px-4 md:px-40">
                 <Heading size="h1" weight="bold" customClasses="text-center capitalize" underline="true">{foundSection.title}</Heading>
                 <div className="py-20">
-                {foundSection.paragraphs.map((paragraph, index) => (
-                <Paragraph key={index} customClasses="my-14 px-4 md:px-20 break-inside-avoid" underline='true'>{paragraph}</Paragraph>
-          ))}
-                   
+                    {foundSection.paragraphs.map((paragraph, index) => 
+                    ( 
+                        <Paragraph key={index} customClasses="my-14 px-4 md:px-20 break-inside-avoid" underline='true'>{paragraph}</Paragraph> 
+                    ))}   
                 </div>
             </section> 
-        </div> : 
-            <Error />
+        </div> 
+        : <Error />
         }
-            
         </>
-
-
     );
 }
 
