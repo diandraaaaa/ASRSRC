@@ -12,6 +12,7 @@ import Home from './pages/Home';
 import Error from './pages/Error';
 import About from './pages/About'
 import Contact from './pages/Contact';  
+import Page from './pages/Page';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: '/contact',
     element: <Contact />
+  },
+  {
+    path: '/teme-fse+',
+    element: <Page />
   }
 ])
 
