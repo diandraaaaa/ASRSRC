@@ -55,7 +55,7 @@ function Footer() {
 
             <div className="flex max-md:text-center max-md:flex-col md:space-x-32">
                 {footerSections.map((section, index) =>(
-                    <ul key={index}>
+                    <ul key={index} className="space-y-2">
                         <li>
                             <Heading size="h6" weight="semibold">{section.title}</Heading>
                         </li>
@@ -73,7 +73,7 @@ function Footer() {
             </div>
 
         </div>
-        <Paragraph customClasses="text-center" color="gray">Copyright © 2024 Antreprenoriat social rural sustenabil in Regiunea Centru </Paragraph>
+        <Paragraph customClasses="text-center mt-10" color="gray">Copyright © 2024 Antreprenoriat social rural sustenabil in Regiunea Centru </Paragraph>
     </footer>
   )
 }
