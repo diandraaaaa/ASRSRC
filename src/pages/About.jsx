@@ -34,7 +34,8 @@ function About() {
     // <TO-DO> i thnk the first column shoukd have the elements bold and green, im not sure why the text in some paragraphs is centerd, the link for "formular de inscriere" doesnt work </TO-DO>
     <>    
     <section>
-        <img src={Image} alt="" className="py-10 px-4 md:px-40" />
+        {/*<img src={Image} alt="" className="py-10 px-4 md:px-40" /> */}
+        <img src={Image} alt="" className="mb-6 px-10 mt-6 rounded-lg w-full sm:mb-0 xl:mb-6 mx-auto xl:w-4/5 " width="800" height="420"/>
     </section>
     <section className="py-20 max-md:text-center">
         <Heading color="black" size="h2" weight="bold" underline="true" customClasses="inline md:ml-32">Obiectivul general </Heading>

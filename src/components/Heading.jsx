@@ -6,6 +6,7 @@ const Heading = ({ size = "", color = "black", weight = "normal", children, unde
         white: "text-white",
         black: "text-customBlack",
         gray: "text-customGray",
+        lightgray: "text-[#58625B]",
         primary: "text-[#B0EC9A]"
     };
     const sizeStyles = {

@@ -8,6 +8,7 @@ const Button = ({size, color, children, onClick, customClasses}) => {
         large: 'text-[32px] md:text-[40px]',
     }
     const colorStyles = {
+        main: "bg-gradient-3 text-white hover:bg-gradient-2",
         primary: "bg-gradient-4 text-[#1F1F1F] hover:text-customBlack",
         secondary: "bg-gradient-1 text-white hover:bg-gradient-4",
         outline: "border-[3px] border-customColor1 text-green-500 hover:bg-customColor1 hover:text-white"

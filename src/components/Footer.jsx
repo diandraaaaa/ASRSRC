@@ -34,26 +34,26 @@ function Footer() {
         },
       ];
   return (
-    <footer className="bg-gradient-4 pt-12 pb-24">
+    <footer className="bg-gradient-3 py-12">
         <div className="flex max-md:flex-col justify-between mx-12 mb-12">
             
-            <div className="flex max-md:flex-col space-x-20">
+            <div className="flex max-md:flex-col md:space-x-20 max-md:mx-auto">
                 <img src={Logo2} alt="" className="max-w-32"/>
                 <img src={Logo1} alt="" className="max-w-32"/>
             </div>
 
-            <img src={Logo3} alt="" className="max-w-32"/>
+            <img src={Logo3} alt="" className="max-w-32 max-md:mx-auto"/>
         </div>
 
-        <div className="flex max-md:flex-col justify-around">
+        <div className="flex max-md:flex-col justify-around max-md:mx-4">
 
-            <div className="text-center space-y-4">
+            <div className="text-center space-y-4 max-md:my-10">
                 <Heading size="h6" weight="bold">Abonează-te la newsletter-ul nostru</Heading>
                 <Input type="email" placeholder="Email" color="primary" width="64" position="mx-auto" icon="email"/>
                 <Paragraph color="gray" size="small" customClasses="max-w-md">Nici nouă nu ne place spam, te informăm doar despre oportunități de implicare,proiecte și activități utile</Paragraph>
             </div>
 
-            <div className="flex max-md:text-center max-md:flex-col md:space-x-32">
+            <div className="flex max-md:text-center max-md:flex-col md:space-x-32 max-md:space-y-10">
                 {footerSections.map((section, index) =>(
                     <ul key={index} className="space-y-2">
                         <li>
@@ -61,7 +61,7 @@ function Footer() {
                         </li>
                         {section.links.map((link, linkIndex) =>(
                             <li key={linkIndex}>
-                                <Heading color="gray">
+                                <Heading color="lightgray">
                                     <a href={link.href}>{link.displayText}</a>
                                 </Heading>
                             </li>

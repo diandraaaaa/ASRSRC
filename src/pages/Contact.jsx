@@ -32,7 +32,7 @@ function Contact() {
                     <Input type="text" name="county" placeholder="County" icon="county"/>
                     <Input type="text" name="city" placeholder="City" icon="city"/>
                 </div>
-                <Button color="secondary" size="" customClasses="mx-0">Submit</Button>
+                <Button color="main" size="" customClasses="mx-0">Submit</Button>
             </div>
         </form>
     </div>

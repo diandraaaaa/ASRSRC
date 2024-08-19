@@ -17,15 +17,15 @@ function Themes() {
               .join(' ') + (section.paragraphs[0].split(' ').length > 15 ? '...' : '');
 
             return (
-              <Project
-                key={index}
-                category={section.category}
-                title={section.title}
-                description={shortDescription}
-                image={section.image}
-                link={`/teme-fse+/${section.link}`}
-                size="small"
-              />
+                <Project
+                    key={index}
+                    category={section.category}
+                    title={section.title}
+                    description={shortDescription}
+                    image={section.image}
+                    link={`/teme-fse+/${section.link}`}
+                    size="small"
+                />
             );
           })}
         </div>

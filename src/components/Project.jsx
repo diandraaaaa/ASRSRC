@@ -14,10 +14,7 @@ function Project({ category, title, link, description, onClick, image, size }) {
                 </Heading>
             <div className="prose prose-slate prose-sm text-slate-600">
                 <Paragraph color="gray">{description}</Paragraph>
-            </div><a
-                className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-customBlack hover:bg-customColor1 hover:text-white focus:ring-slate-500 mt-6"
-                href={link}>Learn
-                more<span className="sr-only"></span>
+            </div><a className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-customBlack hover:bg-gradient-3 hover:text-white focus:ring-slate-500 mt-6" href={link}>Learn more<span className="sr-only"></span>
                 <svg className="overflow-visible ml-3 text-customBlack group-hover:text-white"
                     width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round">

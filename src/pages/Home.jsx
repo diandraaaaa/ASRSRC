@@ -36,7 +36,7 @@ function Home() {
         <div>
           <img src={Image} alt="" className="absolute max-md:hidden max-w-xl z-0"/>
           <Heading color="black" size="h1" weight="bold" customClasses="md:mt-14 max-w-5xl mx-auto z-9">Înscrie-te în proiectul <span className="text-[#27C25C]">„Antreprenoriat social urban sustenabil în Regiunea Centru” </span> și descoperă cum poți să-ți transformi visul în realitate.n</Heading>
-          <Button color="secondary" size="small" customClasses="block mx-auto z-9">Citeste mai mult</Button>
+          <Button color="main" size="small" customClasses="block mx-auto z-9">Citeste mai mult</Button>
         </div>
       </section>
 

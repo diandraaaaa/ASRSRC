@@ -34,7 +34,7 @@ function Nav() {
             <div>
                 <img src={Logos} alt="" className="max-w-60 md:max-w-sm md:ml-8" />
             </div>
-            <nav className="hidden md:flex justify-between bg-gradient-4 py-8 md:text-[12px] xl:text-[16px]">
+            <nav className="hidden md:flex justify-between bg-gradient-3 py-8 md:text-[12px] xl:text-[16px]">
                 <a href='/' className="hover:text-white"><h1 className="ml-12">Antreprenoriat social rural sustenabil in Regiunea Centru</h1></a>
 
                 <div className="flex">
@@ -46,7 +46,7 @@ function Nav() {
                     </ul>
                 </div>
             </nav>
-            <nav className="flex md:hidden bg-gradient-4 py-8" onClick={menuToggle}>
+            <nav className="flex md:hidden bg-gradient-3 py-8" onClick={menuToggle}>
                 <div className="mx-4">
                     { !isMobileNavVisible ? (<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="5" width="24" height="2" fill="#000" />
@@ -63,7 +63,7 @@ function Nav() {
             </nav>
 
             {isMobileNavVisible && (
-                <nav className="absolute z-10 h-96 w-64 bg-[#B3E5A0]">
+                <nav className="absolute z-10 h-96 w-64 bg-[#B3E5A0] bg-[#9be89a]">
                     <ul className="ml-4 pt-10 space-y-6 text-customBlack font-bold hover:cursor-pointer">
                         <li><a href='/' className="hover:text-white">Acasa</a></li>
                         {pages.map((page, index) => (
