@@ -14,7 +14,7 @@ const Heading = ({ size = "", color = "black", weight = "normal", children, unde
         h2: "text-[32px] md:text-[48px]",
         h3: "text-[26px] md:text-[40px]",
         h4: "text-[24px] md:text-[36px]",
-        h5: "text-[32px]",
+        h5: "text-[20px] md:text-[32px]",
         h6: "text-[24px]",
     };
     const weightStyles = {

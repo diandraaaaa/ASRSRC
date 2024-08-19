@@ -9,7 +9,7 @@ const Paragraph = ({ size = "", color = "black", weight = "normal", children, un
         green: "text-[#27C25C]"
     };
     const sizeStyles = {
-        small: "text-[12px] md:text-[16px]",
+        small: "text-[14px] md:text-[16px]",
         normal: "text-[16px] md:text-[20px]",
         large: "text-[20px] md:text-[24px]"
 

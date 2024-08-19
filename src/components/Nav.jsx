@@ -23,7 +23,7 @@ function Nav() {
 
     const pages = [
         {link: '/despre-noi', pageName: 'Despre noi'},
-        {link: '/concurs-planuri-de-afacere', pageName:'Concurs planuri de afacere'},
+        {link: '/concurs', pageName:'Concurs planuri de afacere'},
         {link: '/intreprinderi-sociale', pageName: 'Intreprinderi sociale'},
         {link: '/teme-fse+', pageName: 'Teme FSE+'},
         {link: '/noutati', pageName: 'Noutati'},

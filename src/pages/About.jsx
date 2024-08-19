@@ -38,14 +38,14 @@ function About() {
     </section>
     <section className="py-20 max-md:text-center">
         <Heading color="black" size="h2" weight="bold" underline="true" customClasses="inline md:ml-32">Obiectivul general </Heading>
-        <Paragraph customClasses="my-14 mx-20 px-12" underline="true">{lorem}{lorem}{lorem}{lorem}</Paragraph>
+        <Paragraph customClasses="my-14 mx-4 md:mx-20 md:px-12" underline="true">{lorem}{lorem}{lorem}{lorem}</Paragraph>
 
     </section>
     <section className="py-32">
         <div className="text-center">
             <Heading color="black" weight="bold" size="h2" underline="true" customClasses="inline max-sm:block">Partenerii nostri</Heading>
         </div>
-        <div className="max-w-2xl mx-auto mt-24">
+        <div className="max-w-2xl mx-auto max-md:text-center mt-24">
             <KeyPoint
                 title="Fundația Europeană pentru Consultanță, Implementare și Dezvoltare"
                 link="https://fecid.ro"
@@ -65,7 +65,7 @@ function About() {
     <section className="py-32">
         <div className="text-center">
             <Heading color="black" weight="bold" size="h2" underline="true" customClasses="inline max-sm:block">Formare profesionala</Heading>
-            <Paragraph customClasses="my-14 mx-20 px-12" underline="true">{lorem}{lorem}{lorem}{lorem}</Paragraph>
+            <Paragraph customClasses="my-14 mx-4 md:mx-20 md:px-12 md:text-left" underline="true">{lorem}{lorem}{lorem}{lorem}</Paragraph>
         </div>
         <div className="py-32">
         <Table col1="" col2="" >
@@ -88,7 +88,7 @@ function About() {
         </Table>
     </div>
     <div className="text-center">
-            <Paragraph customClasses="my-14 mx-20 px-12" underline="true">Pentru înscrieri la programul de formare, vă rugăm să accesați <a herf="/contact">formularul de înscriere.</a></Paragraph>
+            <Paragraph customClasses="my-14 mx-4 md:mx-20 md:px-12" underline="true">Pentru înscrieri la programul de formare, vă rugăm să accesați <a herf="/contact">formularul de înscriere.</a></Paragraph>
     </div>
     </section>
 
@@ -97,7 +97,7 @@ function About() {
         <div className="max-md:text-center">
             <Heading color="black" size="h2" weight="bold" underline="true" customClasses="inline md:ml-32">Finantare</Heading>
             <div className="md:px-20 mx-auto"> 
-                <Paragraph customClasses="my-14 px-12" underline="true">{lorem}{lorem}<br/><br/>{lorem}{lorem}</Paragraph>
+                <Paragraph customClasses="my-14 mx-4 md:mx-20 md:px-12" underline="true">{lorem}{lorem}<br/><br/>{lorem}{lorem}</Paragraph>
                 <Grid 
                 image1={Image} text1="text1" 
                 image2={Image2} text2="text2" 
@@ -108,7 +108,7 @@ function About() {
         </div>
     </section>
 
-    <section className="py-32">
+    <section className="md:py-10">
         <Dropdown
             title="Informatii"
             text={`${lorem} ${lorem} ${lorem}`}
@@ -128,7 +128,7 @@ function About() {
             <Heading color="black" weight="bold" size="h1" underline="true" customClasses="inline max-sm:block">Economia Socială</Heading>
         </div>        
         <div className="max-w-5xl mx-auto"> 
-        <Paragraph customClasses="my-14 px-12" underline="true">{lorem}{lorem}<br/><br/>{lorem}{lorem}</Paragraph>
+        <Paragraph customClasses="my-14 mx-4 md:mx-20 md:px-12" underline="true">{lorem}{lorem}<br/><br/>{lorem}{lorem}</Paragraph>
         </div>
     </section>
 
@@ -176,39 +176,7 @@ function About() {
                 size="small"
             />
         </div>
-       
-    </section>
-    
-    <div className="py-32">
-        <Table col1="col1" col2="col2" col3="col3" col4="col4">
-            <TableRow 
-            text1="Hello"
-            text2="Hello"
-            text3="Hello"
-            text4="Hello"
-            />
-            <TableRow 
-            text1="Hello"
-            text2="Hello"
-            text3="Hello"
-            text4="Hello"
-            />
-            <TableRow 
-            text1="Hello"
-            text2="Hello"
-            text3="Hello"
-            text4="Hello"
-            />
-            <TableRow 
-            text1="Hello"
-            text2="Hello"
-            text3="Hello"
-            text4="Hello"
-            />
-        </Table>
-    </div>
-
-        
+    </section>        
   </>
 
       

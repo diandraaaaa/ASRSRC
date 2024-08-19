@@ -38,16 +38,16 @@ function Footer() {
         <div className="flex max-md:flex-col justify-between mx-12 mb-12">
             
             <div className="flex max-md:flex-col space-x-20">
-                <img src={Logo2} alt="" className="max-w-64"/>
-                <img src={Logo1} alt="" className="max-w-64"/>
+                <img src={Logo2} alt="" className="max-w-32"/>
+                <img src={Logo1} alt="" className="max-w-32"/>
             </div>
 
-            <img src={Logo3} alt="" className="max-w-64"/>
+            <img src={Logo3} alt="" className="max-w-32"/>
         </div>
 
         <div className="flex max-md:flex-col justify-around">
 
-            <div className="text-center">
+            <div className="text-center space-y-4">
                 <Heading size="h6" weight="bold">Abonează-te la newsletter-ul nostru</Heading>
                 <Input type="email" placeholder="Email" color="primary" width="64" position="mx-auto" icon="email"/>
                 <Paragraph color="gray" size="small" customClasses="max-w-md">Nici nouă nu ne place spam, te informăm doar despre oportunități de implicare,proiecte și activități utile</Paragraph>

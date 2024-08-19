@@ -8,7 +8,7 @@ import data from '../data/teme.json';
 
 function Page() {
     const params = useParams()
-    const foundSection = data.sections.find(section => section.link === params.title);
+    const foundSection = data.sections.find(section => section.link === params.link);
 
     return (
         <>  

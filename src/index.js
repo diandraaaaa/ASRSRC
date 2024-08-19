@@ -11,8 +11,10 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Error from './pages/Error';
 import About from './pages/About'
-import Contact from './pages/Contact';  
+import Contact from './pages/Contact';   
 import Page from './pages/Page';
+import Concurs from './pages/Concurs';
+import Themes from './pages/Themes';  
 
 const router = createBrowserRouter([
   {
@@ -29,7 +31,15 @@ const router = createBrowserRouter([
     element: <Contact />
   },
   {
-    path: '/teme-fse+/:title',
+    path: '/concurs',
+    element: <Concurs/>
+  },
+  {
+    path: '/teme-fse+',
+    element: <Themes />
+  },
+  {
+    path: '/teme-fse+/:link',
     element: <Page />
   }
 ])
