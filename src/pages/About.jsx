@@ -15,9 +15,10 @@ import Project from '../components/Project';
 
 import Image from '../assets/images/about-img.png'
 import Image2 from '../assets/images/newsletter-bg.png'
-import Icon from '../assets/icons/green-icon.svg'
-import Icon2 from '../assets/icons/green-icon-2.svg'
-import Icon3 from '../assets/icons/green-icon-3.svg'
+
+import Logo from '../assets/Logo FECID.svg'
+import Logo2 from '../assets/logo_prgpers_sm 1.svg'
+
 
 function About() {
      const lorem = `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"`
@@ -30,29 +31,15 @@ function About() {
       ];
 
   return (
+    // <TO-DO> i thnk the first column shoukd have the elements bold and green, im not sure why the text in some paragraphs is centerd, the link for "formular de inscriere" doesnt work </TO-DO>
     <>    
     <section>
         <img src={Image} alt="" className="py-10 px-4 md:px-40" />
     </section>
     <section className="py-20 max-md:text-center">
-        <Heading color="black" size="h2" weight="bold" underline="true" customClasses="inline md:ml-32">Obiective generale </Heading>
-        <div className="grid grid-cols-1 md:grid-cols-3 max-md:space-y-32 py-32 md:px-20">
-            <Objective 
-            text={lorem} 
-            number="1"
-            title="Objective"
-            />
-            <Objective 
-            text={lorem}
-            number="2" 
-            title="Objective"
-            />
-            <Objective
-            text={lorem} 
-            number="3" 
-            title="Objective"
-            />
-        </div>
+        <Heading color="black" size="h2" weight="bold" underline="true" customClasses="inline md:ml-32">Obiectivul general </Heading>
+        <Paragraph customClasses="my-14 mx-20 px-12" underline="true">{lorem}{lorem}{lorem}{lorem}</Paragraph>
+
     </section>
     <section className="py-32">
         <div className="text-center">
@@ -60,23 +47,51 @@ function About() {
         </div>
         <div className="max-w-2xl mx-auto mt-24">
             <KeyPoint
-                title="Understanding Recycling:"
-                text="Explanation of what recycling is and why it’s important."
-                icon={Icon}
+                title="Fundația Europeană pentru Consultanță, Implementare și Dezvoltare"
+                link="https://fecid.ro"
+                text="fecid.ro"
+                icon={Logo}
                 customClasses="pt-2"
             />
             <KeyPoint
-                title="How to Recycle Effectively:"
-                text="Tips on sorting and preparing materials for recycling."
-                icon={Icon2}
+                title="Fundatia PROGPERS"
+                link="https://fundatiaprogpers.ro/"
+                text="fundatiaprogpers.ro"
+                icon={Logo2}
             />
-            <KeyPoint
-                title="The Impact of Recycling:"
-                text="Statistics and facts about how recycling benefits the environment."
-                icon={Icon3}
-            />
+           
         </div>
     </section>
+    <section className="py-32">
+        <div className="text-center">
+            <Heading color="black" weight="bold" size="h2" underline="true" customClasses="inline max-sm:block">Formare profesionala</Heading>
+            <Paragraph customClasses="my-14 mx-20 px-12" underline="true">{lorem}{lorem}{lorem}{lorem}</Paragraph>
+        </div>
+        <div className="py-32">
+        <Table col1="" col2="" >
+            <TableRow 
+            text1="Calendar formare"
+            text2="Derularea cursurilor de formare va debuta în luna a 2-a a proiectului ( luna august 2024) si se va finaliza în luna 9 (martie 2025)."
+            />
+            <TableRow 
+            text1="Calendar formare"
+            text2="Derularea cursurilor de formare va debuta în luna a 2-a a proiectului ( luna august 2024) si se va finaliza în luna 9 (martie 2025)."
+            />
+            <TableRow 
+            text1="Calendar formare"
+            text2="Derularea cursurilor de formare va debuta în luna a 2-a a proiectului ( luna august 2024) si se va finaliza în luna 9 (martie 2025)."
+            />
+            <TableRow 
+            text1="Calendar formare"
+            text2="Derularea cursurilor de formare va debuta în luna a 2-a a proiectului ( luna august 2024) si se va finaliza în luna 9 (martie 2025)."
+            />
+        </Table>
+    </div>
+    <div className="text-center">
+            <Paragraph customClasses="my-14 mx-20 px-12" underline="true">Pentru înscrieri la programul de formare, vă rugăm să accesați <a herf="/contact">formularul de înscriere.</a></Paragraph>
+    </div>
+    </section>
+
 
     <section className="py-32"> 
         <div className="max-md:text-center">
