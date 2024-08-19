@@ -15,6 +15,8 @@ import Contact from './pages/Contact';
 import Page from './pages/Page';
 import Concurs from './pages/Concurs';
 import Themes from './pages/Themes';  
+import Intreprinderi from './pages/Intreprinder';
+import Noutati from './pages/Noutati';
 
 const router = createBrowserRouter([
   {
@@ -35,12 +37,20 @@ const router = createBrowserRouter([
     element: <Concurs/>
   },
   {
+    path: '/intreprinderi-sociale',
+    element: <Intreprinderi/>
+  },
+  {
     path: '/teme-fse+',
     element: <Themes />
   },
   {
     path: '/teme-fse+/:link',
     element: <Page />
+  },
+  {
+    path: '/noutati',
+    element: <Noutati />
   }
 ])
 
