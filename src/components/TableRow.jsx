@@ -3,7 +3,7 @@ import React from 'react'
 function TableRow({text1, text2, text3, text4}) {
   return (
     <tr className="bg-white border-b hover:bg-[#F3FFF3]">
-        <th scope="row" className="px-3 py-4 font-medium text-customBlack whitespace-nowrap">
+        <th scope="row" className="px-3 py-4 font-semibold text-customBlack whitespace-nowrap">
             {text1}
         </th>
         <td className="px-3 py-4">
