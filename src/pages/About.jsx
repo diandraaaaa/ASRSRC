@@ -14,6 +14,7 @@ import Stats from '../components/Stats';
 import Project from '../components/Project';
 import Themes from './Themes';
 import FeaturePoint from '../components/FeaturePoint';  
+import SwipeableObjectives from '../components/SwipeableObjectives';
 
 import Image from '../assets/images/about-img.png'
 import Image2 from '../assets/images/newsletter-bg.png'
@@ -162,6 +163,8 @@ function About() {
                 <FeaturePoint title="Test question"quesitonNr="6">{lorem}</FeaturePoint>
             </div>
         </div>
+        
+        <SwipeableObjectives />
     
   </>
 
