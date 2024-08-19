@@ -16,6 +16,7 @@ import Page from './pages/Page';
 import Concurs from './pages/Concurs';
 import Themes from './pages/Themes';  
 import Intreprinderi from './pages/Intreprinder';
+import Noutati from './pages/Noutati';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
   {
     path: '/teme-fse+/:link',
     element: <Page />
+  },
+  {
+    path: '/noutati',
+    element: <Noutati />
   }
 ])
 

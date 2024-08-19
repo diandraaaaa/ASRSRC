@@ -95,37 +95,6 @@ function About() {
     </div>
     </section>
 
-
-    <section className="py-32"> 
-        <div className="max-md:text-center">
-            <Heading color="black" size="h2" weight="bold" underline="true" customClasses="inline md:ml-32">Finantare</Heading>
-            <div className="md:px-20 mx-auto"> 
-                <Paragraph customClasses="my-14 mx-4 md:mx-20 md:px-12" underline="true">{lorem}{lorem}<br/><br/>{lorem}{lorem}</Paragraph>
-                <Grid 
-                image1={Image} text1="text1" 
-                image2={Image2} text2="text2" 
-                image3={Image2} text3="text3" 
-                image4={Image} text4="text4"
-            />
-            </div>
-        </div>
-    </section>
-
-    <section className="md:py-10">
-        <Dropdown
-            title="Informatii"
-            text={`${lorem} ${lorem} ${lorem}`}
-        />
-         <Dropdown
-            title="Documente necesare"
-            text={`${lorem} ${lorem} ${lorem}`}
-        />
-         <Dropdown
-            title="Subventii si beneficii"
-            text={`${lorem} ${lorem} ${lorem}`}
-        />
-    </section>
-
     <section className="py-32">
         <div className="text-center">
             <Heading color="black" weight="bold" size="h1" underline="true" customClasses="inline max-sm:block">Economia Socială</Heading>
@@ -147,22 +116,8 @@ function About() {
         </div>
     </section>
 
-    <Stats stats={statsData} />
 
-    <Themes />
-
-    <div className="flex max-xl:flex-col justify-center mx-auto container xl:w-4/5 px-4 xl:px-32 py-32 md:px-32">
-        <div className="xl:w-1/2 space-y-10 md:space-y-20 max-md:mb-10">
-            <FeaturePoint title="Test question"quesitonNr="1">{lorem}</FeaturePoint>
-            <FeaturePoint title="Test Question"quesitonNr="2">{lorem}</FeaturePoint>
-            <FeaturePoint title="Test question"quesitonNr="3">{lorem}</FeaturePoint>
-        </div>
-        <div className="xl:w-1/2 space-y-10 md:space-y-24 md:translate-y-24">
-            <FeaturePoint title="Test question"quesitonNr="4">{lorem}</FeaturePoint>
-            <FeaturePoint title="Test question"quesitonNr="5">{lorem}</FeaturePoint>
-            <FeaturePoint title="Test question"quesitonNr="6">{lorem}</FeaturePoint>
-        </div>
-    </div>
+    
     
   </>
 
