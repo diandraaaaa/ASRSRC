@@ -12,6 +12,8 @@ import KeyPoint from '../components/KeyPoint';
 import Dropdown from '../components/Dropdown';
 import Stats from '../components/Stats';
 import Project from '../components/Project';
+import Themes from './Themes';
+import FeaturePoint from '../components/FeaturePoint';  
 
 import Image from '../assets/images/about-img.png'
 import Image2 from '../assets/images/newsletter-bg.png'
@@ -147,37 +149,20 @@ function About() {
 
     <Stats stats={statsData} />
 
-    <section className="py-32 px-2 md:px-10 xl:px-32">
-        <Project 
-            category="Test"
-            title="Titlu"
-            description={lorem}
-            image={Image}
-        />
-        <div className="grid grid-cols-1 xl:grid-cols-3">
-            <Project 
-                category="Test"
-                title="Titlu"
-                description={lorem}
-                image={Image}
-                size="small"
-            />
-            <Project 
-                category="Test"
-                title="Titlu"
-                description={lorem}
-                image={Image}
-                size="small"
-            />
-            <Project 
-                category="Test"
-                title="Titlu"
-                description={lorem}
-                image={Image}
-                size="small"
-            />
+    <Themes />
+        <div className="flex max-xl:flex-col justify-center mx-auto container xl:w-4/5 px-4 xl:px-32 py-32 md:px-32">
+            <div className="xl:w-1/2 space-y-10 md:space-y-20 max-md:mb-10">
+                <FeaturePoint title="Test question"quesitonNr="1">{lorem}</FeaturePoint>
+                <FeaturePoint title="Test Question"quesitonNr="2">{lorem}</FeaturePoint>
+                <FeaturePoint title="Test question"quesitonNr="3">{lorem}</FeaturePoint>
+            </div>
+            <div className="xl:w-1/2 space-y-10 md:space-y-24 md:translate-y-24">
+                <FeaturePoint title="Test question"quesitonNr="4">{lorem}</FeaturePoint>
+                <FeaturePoint title="Test question"quesitonNr="5">{lorem}</FeaturePoint>
+                <FeaturePoint title="Test question"quesitonNr="6">{lorem}</FeaturePoint>
+            </div>
         </div>
-    </section>        
+    
   </>
 
       

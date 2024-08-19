@@ -8,7 +8,9 @@ function Themes() {
   return (
     <>
         <section className="py-32 px-4 md:px-10 xl:px-32">
-        <Heading size="h1" weight="bold" customClasses="text-center ">Teme FSE+</Heading>
+            <div className="text-center">
+                <Heading size="h1" weight="bold" customClasses="text-center inline max-sm:block" underline="true">Teme FSE+</Heading>
+            </div>
         <div className="grid grid-cols-1 xl:grid-cols-3">
           {data.sections.map((section, index) => {
             const shortDescription = section.paragraphs[0]

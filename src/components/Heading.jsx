@@ -11,6 +11,7 @@ const Heading = ({ size = "", color = "black", weight = "normal", children, unde
     };
     const sizeStyles = {
         title: "text-[96px]",
+        question: "text-[48px] md:text-[82px]",
         h1: "text-[36px] md:text-[64px]",
         h2: "text-[32px] md:text-[48px]",
         h3: "text-[26px] md:text-[40px]",
